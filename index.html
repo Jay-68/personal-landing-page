@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="James Ngari — Full-Stack Developer personal portfolio" />
+  <title>James Ngari | Full-Stack Developer</title>
+  <link rel="stylesheet" href="styles.css" />
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ===================== NAVBAR ===================== -->
+  <header class="navbar" id="navbar" role="banner">
+    <div class="nav-container">
+      <!-- Logo / Brand -->
+      <a href="#home" class="nav-logo" aria-label="James Ngari home">
+        <span class="logo-bracket">&lt;</span>JN<span class="logo-bracket">/&gt;</span>
+      </a>
+
+      <!-- Desktop nav links -->
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a href="#home"     class="nav-link active" data-section="home">Home</a>
+        <a href="#about"    class="nav-link"         data-section="about">About</a>
+        <a href="#projects" class="nav-link"         data-section="projects">Projects</a>
+        <a href="#contact"  class="nav-link"         data-section="contact">Contact</a>
+      </nav>
+
+      <!-- Right-side controls -->
+      <div class="nav-controls">
+        <!-- Dark / light toggle -->
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode" title="Toggle theme">
+          <span class="theme-icon sun">&#9728;</span>
+          <span class="theme-icon moon">&#9790;</span>
+        </button>
+
+        <!-- Hamburger (mobile) -->
+        <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile menu -->
+    <nav class="mobile-menu" id="mobileMenu" aria-label="Mobile navigation" hidden>
+      <a href="#home"     class="mobile-link" data-section="home">Home</a>
+      <a href="#about"    class="mobile-link" data-section="about">About</a>
+      <a href="#projects" class="mobile-link" data-section="projects">Projects</a>
+      <a href="#contact"  class="mobile-link" data-section="contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ===================== HERO ===================== -->
+    <section id="home" class="section hero-section" aria-label="Hero">
+      <!-- Decorative blobs -->
+      <div class="blob blob-1" aria-hidden="true"></div>
+      <div class="blob blob-2" aria-hidden="true"></div>
+
+      <div class="hero-content reveal">
+        <p class="hero-greeting">Hello, world! 👋</p>
+        <h1 class="hero-name">I'm <span class="highlight">James Ngari</span></h1>
+        <h2 class="hero-title">Full-Stack Developer &amp; UI Enthusiast</h2>
+        <p class="hero-intro">
+          I craft fast, accessible, and beautifully designed web experiences —
+          from pixel-perfect front ends to solid, scalable back-end systems.
+        </p>
+        <div class="hero-cta">
+          <a href="#projects" class="btn btn-primary">View Projects</a>
+          <a href="#contact"  class="btn btn-outline">Get in Touch</a>
+        </div>
+      </div>
+
+      <!-- Animated code snippet decoration -->
+      <div class="hero-code reveal reveal-delay" aria-hidden="true">
+        <div class="code-window">
+          <div class="code-titlebar">
+            <span class="dot red"></span>
+            <span class="dot yellow"></span>
+            <span class="dot green"></span>
+            <span class="code-filename">about-me.js</span>
+          </div>
+          <pre class="code-body"><code><span class="kw">const</span> <span class="var">developer</span> = {
+  <span class="key">name</span>: <span class="str">"James Ngari"</span>,
+  <span class="key">role</span>: <span class="str">"Full-Stack Dev"</span>,
+  <span class="key">loves</span>: [<span class="str">"React"</span>, <span class="str">"Python"</span>, <span class="str">"Design"</span>],
+  <span class="key">available</span>: <span class="bool">true</span>,
+};</code></pre>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== ABOUT ===================== -->
+    <section id="about" class="section about-section" aria-label="About">
+      <div class="section-container">
+        <div class="section-header reveal">
+          <span class="section-tag">Get to know me</span>
+          <h2 class="section-title">About <span class="highlight">Me</span></h2>
+        </div>
+
+        <div class="about-grid">
+          <!-- Avatar -->
+          <div class="about-avatar reveal">
+            <div class="avatar-wrapper">
+              <div class="avatar-img" aria-label="James Ngari avatar">JN</div>
+              <div class="avatar-badge">Open to Work ✨</div>
+            </div>
+          </div>
+
+          <!-- Bio + skills -->
+          <div class="about-content reveal reveal-delay">
+            <p class="about-bio">
+              I'm a passionate full-stack developer with <strong>3+ years</strong> of experience building
+              products that live on the web. I love turning complex problems into simple, elegant solutions
+              and collaborating with teams that care about quality.
+            </p>
+            <p class="about-bio">
+              When I'm not coding, you'll find me hiking mountain trails, experimenting with specialty
+              food, or listening to cool music.
+            </p>
+
+            <h3 class="skills-title">Tech Stack</h3>
+            <ul class="skills-grid" aria-label="Skills list">
+              <li class="skill-tag">HTML / CSS</li>
+              <li class="skill-tag">JavaScript</li>
+              <li class="skill-tag">TypeScript</li>
+              <li class="skill-tag">React</li>
+              <li class="skill-tag">Node.js</li>
+              <li class="skill-tag">next.js</li>
+              <li class="skill-tag">PostgreSQL</li>
+              <li class="skill-tag">MongoDB</li>
+              <li class="skill-tag">Python</li>
+              <li class="skill-tag">Git / GitHub</li>
+              <li class="skill-tag">REST &amp; GraphQL</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== PROJECTS ===================== -->
+    <section id="projects" class="section projects-section" aria-label="Projects">
+      <div class="section-container">
+        <div class="section-header reveal">
+          <span class="section-tag">What I've built</span>
+          <h2 class="section-title">Featured <span class="highlight">Projects</span></h2>
+        </div>
+
+        <div class="projects-grid">
+
+          <!-- Card 1 -->
+          <article class="project-card reveal reveal-delay-2" aria-label="Project: WeatherLens">
+            <div class="card-header">
+              <span class="card-icon">&#127780;</span>
+              <div class="card-links">
+                <a href="#" class="card-link" aria-label="GitHub repo for WeatherLens" title="GitHub">
+                  <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20" aria-hidden="true"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.1 3.3 9.42 7.88 10.95.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.54-3.88-1.54-.52-1.33-1.28-1.69-1.28-1.69-1.05-.71.08-.7.08-.7 1.16.08 1.77 1.2 1.77 1.2 1.03 1.76 2.7 1.25 3.36.96.1-.75.4-1.25.73-1.54-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.29 1.18-3.09-.12-.29-.51-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11.04 11.04 0 0 1 5.78 0c2.2-1.49 3.16-1.18 3.16-1.18.62 1.59.23 2.76.11 3.05.74.8 1.18 1.83 1.18 3.09 0 4.42-2.7 5.4-5.27 5.68.42.36.79 1.07.79 2.16v3.2c0 .31.21.67.8.56A10.51 10.51 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/></svg>
+                </a>
+                <a href="#" class="card-link" aria-label="Live demo for WeatherLens" title="Live demo">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                </a>
+              </div>
+            </div>
+            <h3 class="card-title">WeatherLens</h3>
+            <p class="card-desc">
+              A beautiful weather dashboard that shows 7-day forecasts, hourly charts, and location-based
+              alerts using the OpenWeather API. Features animated weather icons.
+            </p>
+            <ul class="card-tags" aria-label="Technologies used">
+              <li>Vanilla JS</li><li>Chart.js</li><li>OpenWeather API</li><li>CSS</li>
+            </ul>
+          </article>
+
+        </div><!-- /projects-grid -->
+      </div>
+    </section>
+
+    <!-- ===================== CONTACT ===================== -->
+    <section id="contact" class="section contact-section" aria-label="Contact">
+      <div class="section-container">
+        <div class="section-header reveal">
+          <span class="section-tag">Let's talk</span>
+          <h2 class="section-title">Get in <span class="highlight">Touch</span></h2>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Info column -->
+          <div class="contact-info reveal">
+            <p class="contact-intro">
+              Have a project in mind, a question, or just want to say hello?
+              I'd love to hear from you. Fill in the form and I'll get back
+              within 24 hours.
+            </p>
+            <ul class="contact-details" aria-label="Contact details">
+              <li>
+                <span class="contact-icon" aria-hidden="true">&#9993;</span>
+                <a href="mailto:james.ngari.n@gmail.com">ngari.james.n@gmail.com</a>
+              </li>
+              <li>
+                <span class="contact-icon" aria-hidden="true">&#127758;</span>
+                Nairobi, Kenya
+              </li>
+              <li>
+                <span class="contact-icon" aria-hidden="true">&#128337;</span>
+                Mon – Fri, 9 AM – 6 PM Eastern African Time
+              </li>
+            </ul>
+          </div>
+
+          <!-- Form column -->
+          <div class="contact-form-wrapper reveal reveal-delay">
+            <form id="contactForm" class="contact-form" novalidate aria-label="Contact form">
+
+              <div class="form-group">
+                <label for="name">Full Name <span class="required" aria-hidden="true">*</span></label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="Jane Doe"
+                  autocomplete="name"
+                  aria-required="true"
+                />
+                <span class="field-error" id="nameError" role="alert" aria-live="polite"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="email">Email Address <span class="required" aria-hidden="true">*</span></label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="jane@example.com"
+                  autocomplete="email"
+                  aria-required="true"
+                />
+                <span class="field-error" id="emailError" role="alert" aria-live="polite"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="message">Message <span class="required" aria-hidden="true">*</span></label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="5"
+                  placeholder="Tell me about your project..."
+                  aria-required="true"
+                ></textarea>
+                <span class="field-error" id="messageError" role="alert" aria-live="polite"></span>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-full" id="submitBtn">
+                <span class="btn-text">Send Message</span>
+                <span class="btn-loader" aria-hidden="true"></span>
+              </button>
+
+              <!-- Success / error banner -->
+              <div id="formFeedback" class="form-feedback" role="alert" aria-live="polite" hidden></div>
+
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer" role="contentinfo">
+    <div class="footer-container">
+      <p class="footer-copy">
+        &copy; <span id="year"></span> James Ngari, Crafted with &#10084;&#65039; and lots of music.
+      </p>
+      <nav class="footer-social" aria-label="Social links">
+        <a href="https://github.com/Jay-68" class="social-link" aria-label="GitHub profile" title="GitHub">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22" aria-hidden="true"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.1 3.3 9.42 7.88 10.95.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.54-3.88-1.54-.52-1.33-1.28-1.69-1.28-1.69-1.05-.71.08-.7.08-.7 1.16.08 1.77 1.2 1.77 1.2 1.03 1.76 2.7 1.25 3.36.96.1-.75.4-1.25.73-1.54-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.29 1.18-3.09-.12-.29-.51-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11.04 11.04 0 0 1 5.78 0c2.2-1.49 3.16-1.18 3.16-1.18.62 1.59.23 2.76.11 3.05.74.8 1.18 1.83 1.18 3.09 0 4.42-2.7 5.4-5.27 5.68.42.36.79 1.07.79 2.16v3.2c0 .31.21.67.8.56A10.51 10.51 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/></svg>
+        </a>
+        <a href="https://www.linkedin.com/in/james-ngari" class="social-link" aria-label="LinkedIn profile" title="LinkedIn">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22" aria-hidden="true"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.95v5.66H9.36V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.35-1.85 3.58 0 4.24 2.36 4.24 5.43v6.31zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zm1.78 13.02H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.72V1.72C24 .77 23.2 0 22.22 0z"/></svg>
+        </a>
+        <a href="mailto:ngari.james.n@gmail.com" class="social-link" aria-label="Email Alex" title="Email">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="22" height="22" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><polyline points="2,4 12,13 22,4"/></svg>
+        </a>
+      </nav>
+    </div>
+  </footer>
+
+  <!-- Scroll-to-top button -->
+  <button class="scroll-top" id="scrollTop" aria-label="Scroll to top" title="Back to top" hidden>
+    &#8679;
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
