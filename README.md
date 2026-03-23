@@ -3,7 +3,7 @@
 A clean, responsive personal portfolio landing page built with plain HTML, CSS, and JavaScript. No frameworks, no build tools — just the web platform.
 
 ---
-*Project live at  https://jay-68.github.io/personal-landing-page/
+* Project live at  https://jay-68.github.io/personal-landing-page/
 
 ## 📁 Project Structure
 
